@@ -1,0 +1,102 @@
+html {
+    font-size: 10px;
+    background-color: $bg-main-color;
+    font-family: $special-font;
+}
+
+body {
+
+    position: relative;
+    background-color: #fff;
+}
+
+// .logo {
+//     position: absolute;
+//     left: 40vh;
+//     width: 255px;
+//     height: 184px;
+//     box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.15);
+//     background-color: #ffffff;
+
+// }
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    background-color: #fff;
+    min-height: 95vh;
+    margin: 0 auto;
+    align-content: flex-start;
+    background-color: $bg-main-color;
+
+
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-basis: 100%;
+    background-color: transparent;
+
+}
+
+.logo {
+    flex-basis: 20%;
+    //background-color: green;
+    flex-grow: 1;
+}
+
+.menu {
+
+    flex-basis: 60%;
+    background-color: transparent;
+    color: white;
+    flex-grow: 2;
+
+
+
+}
+
+.search {
+    flex-basis: 20%;
+    background-color: black;
+    color: white;
+    flex-grow: 1;
+
+}
+
+
+
+.main {
+    // position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+
+
+}
+
+.side-menu {
+    position: absolute;
+    align-self: flex-start;
+    flex-basis: 100%;
+    background-color: darkorange;
+    min-height: 90vh;
+
+
+}
+
+.about {
+    flex-basis: 100%;
+    background-color: yellow;
+}
+
+.article-main {
+
+    flex-basis: 85%;
+    // min-height: 92vh;
+}
