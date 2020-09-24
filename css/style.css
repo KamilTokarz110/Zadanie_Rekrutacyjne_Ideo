@@ -13,23 +13,21 @@ html {
 }
 
 body {
-  position: relative;
   background-color: #fff;
 }
 
 .wrapper {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-size: 2rem;
-  background-color: #fff;
-  min-height: 95vh;
-  margin: 0 auto;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  font-size: 1.8rem;
+  background-color: #fff;
+  min-height: 100vh;
+  margin: 0 auto;
   background-color: #033b5b;
 }
 
@@ -37,76 +35,138 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  background-color: transparent;
-}
-
-.logo {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  height: 90px;
   background-color: transparent;
+  font-family: "PT Sans", sans-serif;
   color: white;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  list-style: none;
+  line-height: 3rem;
+}
+
+.menu__item {
+  margin: 30px 20px;
+  font-size: 2rem;
+  font-weight: 300;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.menu__item:hover {
+  border-bottom: 2px white solid;
+}
+
+.menu__link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
 }
 
 .search {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-  background-color: black;
-  color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0 15px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  min-width: 200px;
+}
+
+.search__input {
+  border: 0;
+  padding: 5px 10px;
+  width: 200px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.search__icon {
+  position: absolute;
+  background-color: black;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 35px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.search__icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  background-color: #fff;
 }
 
-.side-menu {
-  position: absolute;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+.main__side-menu {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
   background-color: darkorange;
-  min-height: 90vh;
 }
 
-.about {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+.main__about {
+  justify-items: flex-start;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
   background-color: yellow;
 }
 
-.article-main {
-  -ms-flex-preferred-size: 85%;
-      flex-basis: 85%;
+.main__article-main {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-items: flex-end;
 }
 /*# sourceMappingURL=style.css.map */
