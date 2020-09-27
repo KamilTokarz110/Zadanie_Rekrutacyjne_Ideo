@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -31,7 +32,7 @@
             </nav>
 
             <form action="/" class="search">
-                <input class="search__input" type="text" placeholder="Search">
+                <input class="search__input " type="text" placeholder="Search">
                 <div class="search__icon">
                     <!-- <img class="image" src="images/nav_search_icon.png" alt=""> -->
                     <i class="fas fa-search"></i>
@@ -41,23 +42,35 @@
         </div>
 
         <section class="main">
-            <div class="main__side-menu main__side-menu--active">
-                <ul class="side-menu__list">
-                    <li class="side-menu__item"><a href="" class="side-menu__link">Aktualności</a></li>
-                    <li class="side-menu__item"><a href="" class="side-menu__link">Branże</a></li>
-                    <li class="side-menu__item"><a href="" class="side-menu__link">Produkty</a></li>
-                    <li class="side-menu__item"><a href="" class="side-menu__link">Usługi</a></li>
-                    <li class="side-menu__item"><a href="" class="side-menu__link">Referencje</a></li>
-                    <li class="side-menu__item"><a href="" class="side-menu__link">Kontakt</a></li>
-                    <div class="line"></div>
-                    <li class="side-menu__item"><a href="" class="side-menu__link">O firmie</a></li>
-                    <li class="side-menu__item"><a href="" class="side-menu__link">Nagrody</a></li>
-                    <li class="side-menu__item"><a href="" class="side-menu__link">Relacje</a></li>
-                    <li class="side-menu__item"><a href="" class="side-menu__link">inwestorskie</a></li>
-                    <li class="side-menu__item"><a href="" class="side-menu__link">Partnerzy</a></li>
-                    <li class="side-menu__item"><a href="" class="side-menu__link">Kariera</a></li>
+            <nav class="main__side-menu ">
+                <ul class="main__side-menu__list">
+                    <div class="main__side-menu__arrow "><img src="images/side_menu_arrow_icon.png" alt=""></div>
+                    <li class="main__side-menu__item">
+                        <p class="main__side-menu__title">Menu</p>
+                    </li>
+                    <div class="main__side-menu__line"></div>
+                    <li class="main__side-menu__item"><a href="#" class="main__side-menu__link">Aktualności</a></li>
+                    <li class="main__side-menu__item"><a href="#" class="main__side-menu__link">Branże</a></li>
+                    <li class="main__side-menu__item"><a href="#" class="main__side-menu__link">Produkty</a></li>
+                    <li class="main__side-menu__item"><a href="#" class="main__side-menu__link">Usługi</a></li>
+                    <li class="main__side-menu__item"><a href="#" class="main__side-menu__link">Referencje</a></li>
+                    <li class="main__side-menu__item"><a href="#" class="main__side-menu__link">Kontakt</a></li>
+                    <div class="main__side-menu__line"></div>
+                    <li class="main__side-menu__item"><a href="#" class="main__side-menu__link">O firmie</a></li>
+                    <li class="main__side-menu__item"><a href="#" class="main__side-menu__link">Nagrody</a></li>
+                    <li class="main__side-menu__item"><a href="#" class="main__side-menu__link">Relacje</a></li>
+                    <li class="main__side-menu__item"><a href="#" class="main__side-menu__link">inwestorskie</a></li>
+                    <li class="main__side-menu__item"><a href="#" class="main__side-menu__link">Partnerzy</a></li>
+                    <li class="main__side-menu__item"><a href="#" class="main__side-menu__link">Kariera</a></li>
+                    <div class="main__side-menu__line"></div>
+                    <li class="main__side-menu__item-social">
+                        <a href="#" class="main__side-menu__link"><img src="images/side_menu_fb_icon.png" alt=""></a>
+                    </li>
+                    <li class="main__side-menu__item-social">
+                        <a href="#" class="main__side-menu__link"><img src="images/side_menu_in_icon.png" alt=""></a>
+                    </li>
                 </ul>
-            </div>
+            </nav>
             <div class="article">
                 <div class="main__about">
                     <div class="logo"><img class="logo__image" src="images/header_logo_simple.png" alt=""></div>
@@ -155,7 +168,7 @@
     </div>
 
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
