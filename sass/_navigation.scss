@@ -1,0 +1,114 @@
+.navigation {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: transparent;
+    flex-basis: 7vh;
+    width: 100%;
+
+    .menu {
+        flex-basis: 78%;
+        font-family: $special-font;
+        height: 7vh;
+        padding: 15px 0 15px 80px;
+
+        &__list {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            list-style: none;
+        }
+
+        &__item {
+            margin: 0 17px;
+            font-size: 2.1rem;
+            line-height: 4rem;
+
+            @media(max-width:1920px) {
+
+                line-height: 4rem;
+            }
+
+            @media(max-width:1366px) {
+                margin: 5px 10px;
+                font-size: 1.4rem;
+                line-height: 3rem;
+            }
+
+        }
+
+        &__link {
+            display: block;
+            color: white;
+            text-decoration: none;
+
+        }
+
+
+    }
+
+    .search {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        flex-basis: 24%;
+        margin-right: 10px;
+
+        &__input {
+
+            display: none;
+            width: 0%;
+            height: 0%;
+            max-height: 50px;
+            border-radius: 5px;
+            padding: 0 10px;
+            font-size: 1.4rem;
+            transition: .3s linear;
+            margin-top: 10px;
+
+            &:focus {
+                box-shadow: 0 0 2px 1px blue;
+                font-weight: bold;
+            }
+
+
+        }
+
+        &__input--active {
+            display: block;
+            width: 100%;
+            height: 50%;
+        }
+
+        .search__icon {
+            position: absolute;
+            right: 0;
+            max-height: 50px;
+            cursor: pointer;
+            color: white;
+            font-size: 2.1rem;
+            transition: .2s linear;
+
+            @media(max-width: 1920px) {
+                margin-top: 10px;
+            }
+
+            @media(max-width:1366px) {
+                font-size: 1.7rem;
+            }
+
+
+
+        }
+
+        .search__icon--active {
+            color: black;
+        }
+
+
+
+    }
+}
